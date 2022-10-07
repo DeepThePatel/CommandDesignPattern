@@ -8,6 +8,6 @@ public class InputHandler {
     }
 
     public void inputEntered(String data) {
-        
+
     }
 }

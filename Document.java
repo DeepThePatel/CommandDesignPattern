@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Document {
     private String fileName;
-    private ArrayList<String> lines;
+    private ArrayList<String> lines = new ArrayList<String>();
 
     public Document(String fileName) {
 
@@ -19,6 +21,6 @@ public class Document {
     }
 
     public String save() {
-        
+
     }
 }

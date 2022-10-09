@@ -1,8 +1,9 @@
 package CommandDesignPattern;
 
-public class SaveCommand {
+public class SaveCommand extends Command{
     public SaveCommand(Document doc) {
-
+        super(doc);
+        doc.save();
     }
 
     public String execute() {

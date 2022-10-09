@@ -1,4 +1,5 @@
 package CommandDesignPattern;
+
 import java.util.Scanner;
 
 public class AppendCommand extends Command {
@@ -9,6 +10,6 @@ public class AppendCommand extends Command {
     }
 
     public String execute() {
-        
+        return "The line has been appended to the document";
     }
 }

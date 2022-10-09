@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package CommandDesignPattern;
 
+import java.util.Scanner;
 import javax.print.Doc;
 
 public class WriteCommand {
@@ -10,6 +11,6 @@ public class WriteCommand {
     }
 
     public String execute() {
-        
+        return "The line was written to the file";
     }
 }

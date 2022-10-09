@@ -1,11 +1,12 @@
 package CommandDesignPattern;
 
-public class SaveCommand {
+public class SaveCommand extends Command {
     public SaveCommand(Document doc) {
-
+        super(doc);
+        this.document = doc;
     }
 
     public String execute() {
-        return "The file has been saved";
+        return document.save();
     }
 }

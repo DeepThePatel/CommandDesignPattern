@@ -6,7 +6,8 @@ public class AppendCommand extends Command {
     private Scanner in;
 
     public AppendCommand(Document doc) {
-
+        super(doc);
+        doc.append(in);
     }
 
     public String execute() {

@@ -6,6 +6,13 @@ public class Document {
     private ArrayList<String> lines = new ArrayList<String>();
 
     public Document(String fileName) {
+        this.fileName=fileName;
+
+        this.lines=FileManipulator.readFile(fileName);
+        lines.add("_______________");
+        lines.add("          ");
+        lines.add("            ");
+        lines.add("_______________");
 
     }
 

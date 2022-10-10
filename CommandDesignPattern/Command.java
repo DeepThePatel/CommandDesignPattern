@@ -1,5 +1,3 @@
-package CommandDesignPattern;
-
 public abstract class Command {
     protected Document document;
 

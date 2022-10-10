@@ -1,7 +1,4 @@
-package CommandDesignPattern;
-
 import java.util.Scanner;
-import javax.print.Doc;
 
 public class WriteCommand extends Command{
     private Scanner in = new Scanner(System.in);

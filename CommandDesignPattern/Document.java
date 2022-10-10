@@ -1,6 +1,6 @@
-package CommandDesignPattern;
-
 import java.util.ArrayList;
+
+import CommandDesignPattern.FileManipulator;
 
 public class Document {
     private String fileName;
@@ -30,6 +30,16 @@ public class Document {
     }
 
     public String save() {
-        return null;
+        String ret = "";
+        try {
+            FileManipulator.writeFile(this.fileName, this.lines);
+            ret = "The file has been saved";
+        }
+        catch(Exception e)
+        {
+            ret = "Sorry, we cannot save at this time";
+        }
+        System.out.println(ret);
+        return ret;
     }
 }

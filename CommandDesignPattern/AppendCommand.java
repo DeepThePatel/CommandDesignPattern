@@ -1,5 +1,3 @@
-package CommandDesignPattern;
-
 import java.util.Scanner;
 
 public class AppendCommand extends Command {

@@ -1,5 +1,3 @@
-package CommandDesignPattern;
-
 public class ViewCommand extends Command {
     public ViewCommand(Document doc) {
         super(doc);

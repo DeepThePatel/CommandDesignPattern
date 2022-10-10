@@ -15,7 +15,9 @@ public class Document {
     }
 
     public String append(String line) {
-        return null;
+        lines.add(lines.size() - 2, "| " + line + " |");
+        System.out.println("The line has been appended to the file.");
+        return "The line has been appended to the file.";
     }
 
     public String write(String line) {

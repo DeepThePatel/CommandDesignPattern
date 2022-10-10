@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-import CommandDesignPattern.FileManipulator;
 
 public class Document {
     private String fileName;

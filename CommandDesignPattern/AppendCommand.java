@@ -8,11 +8,12 @@ public class AppendCommand extends Command {
     public AppendCommand(Document doc) {
         super(doc);
         this.document=doc;
+        System.out.println("What would you like to append?");
+        String line = in.nextLine();
+        doc.append(line);
     }
 
     public String execute() {
-        System.out.println("What would you like to append?");
-        String line = in.nextLine();
-        return document.append(line);
+        return "The line has been appended.";
     }
 }

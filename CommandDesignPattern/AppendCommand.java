@@ -14,6 +14,8 @@ public class AppendCommand extends Command {
     }
 
     public String execute() {
-        return "The line has been appended.";
+        System.out.println("What would you like to append?");
+        String line = in.nextLine();
+        return (document.append(line));
     }
 }

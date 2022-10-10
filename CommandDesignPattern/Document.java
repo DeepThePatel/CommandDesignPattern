@@ -11,7 +11,11 @@ public class Document {
     }
 
     public String view() {
-        return null;
+        for(int i=0;i<lines.size();i++)
+        {
+            System.out.println(lines.get(i));
+        }
+        return "";
     }
 
     public String append(String line) {

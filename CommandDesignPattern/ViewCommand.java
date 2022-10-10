@@ -5,6 +5,9 @@ public class ViewCommand extends Command {
     }
  
 
+    /**
+     * displays the file for the user
+     */
     public String execute() {
         return document.view();
     }

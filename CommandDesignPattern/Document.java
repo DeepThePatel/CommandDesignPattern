@@ -10,16 +10,30 @@ public class Document {
 
     }
 
+    /**
+     * displays the file
+     * @return each line of the file 
+     */
     public String view() {
         return null;
     }
 
+    /**
+     * adds a line to the file
+     * @param line
+     * @return that the line has been appended to the file
+     */
     public String append(String line) {
         lines.add(lines.size() - 2, "| " + line + " |");
         System.out.println("The line has been appended to the file.");
         return "The line has been appended to the file.";
     }
 
+    /**
+     * writes out the text file
+     * @param line
+     * @return that the line has been written to the file 
+     */
     public String write(String line) {
         lines.clear();
         lines.add("________________");
@@ -31,6 +45,10 @@ public class Document {
         return "The line has been written to the file";
     }
 
+    /**
+     * uses file manipulator to write and save the file
+     * @return if the file has been saved or not
+     */
     public String save() {
         String ret = "";
         try {

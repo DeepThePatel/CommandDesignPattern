@@ -7,6 +7,10 @@ public class InputHandler {
 
     }
 
+    /**
+     * stores the data that is entered into the hashmap
+     * @param data
+     */
     public void inputEntered(String data) {
         if (commands.containsKey(data))
         {

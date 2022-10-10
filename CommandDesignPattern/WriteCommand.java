@@ -8,6 +8,9 @@ public class WriteCommand extends Command{
         this.document=doc;
     }
 
+    /**
+     * writes the new line into the file for what the user wanted to add
+     */
     public String execute() {
         System.out.println("What would you like to add?");
         String line = in.nextLine();

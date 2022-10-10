@@ -6,6 +6,9 @@ public class SaveCommand extends Command {
 
     }
 
+    /**
+     * tells the user the file has been saved
+     */
     public String execute() {
         return document.save();
     }

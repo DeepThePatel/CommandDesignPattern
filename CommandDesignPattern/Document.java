@@ -11,7 +11,7 @@ public class Document {
     }
 
     public String view() {
-        for(int i=0;i<lines.size();i++)
+        for (int i=0;i<lines.size();i++)
         {
             System.out.println(lines.get(i));
         }

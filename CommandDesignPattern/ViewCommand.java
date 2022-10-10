@@ -1,5 +1,3 @@
-package CommandDesignPattern;
-
 public class ViewCommand extends Command {
     public ViewCommand(Document doc) {
         super(doc);
@@ -7,6 +5,9 @@ public class ViewCommand extends Command {
     }
  
 
+    /**
+     * displays the file for the user
+     */
     public String execute() {
         return document.view();
     }
